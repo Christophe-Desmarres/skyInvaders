@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesjeu.css">
+</head>
+<body>
+
+<div id="espacejeu" class="espacejeu">
+    <div>
+        <p class="score">score <span id="score">0</span></p>
+    </div>
+
+    <div id="ecran" class="ecran">
+        <!--
+        <div class="clavier" id="tactile">
+            <div>
+                <p id="tir1" class="touch">1</p> 
+            </div>
+                <div>
+                <p id="haut" class="touch">2</p>
+            </div>
+            <div>
+                <p id="tir2" class="touch">3</p>
+            </div>
+            <div>
+                <p id="bas" class="touch">4</p>
+            </div>
+        </div>
+        -->
+    
+        <span id="message" class="message"></span>
+        <img src="ressource jeu/avion.png" id="avion" class="avion">
+        <img src="ressource jeu/ennemi.png" id="ennemi0" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi1" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi2" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi3" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi4" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi5" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi6" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="ennemi7" class="ennemi">
+        <img src="ressource jeu/ennemi.png" id="boss" class="ennemi">
+        <img src="ressource jeu/missile.gif" id="missile0" class="missile">
+        <img src="ressource jeu/missile.gif" id="missile1" class="missile">
+        <img src="ressource jeu/missile.gif" id="missile2" class="missile">
+        <img src="ressource jeu/missile.gif" id="missile3" class="missile">
+        <img src="ressource jeu/missile.gif" id="missile4" class="missile">
+
+    </div>
+
+    <div class="barrevie" id="nbvie">
+        <img src="ressource jeu/coeurok.png" id="vie0" class="vie">
+        <img src="ressource jeu/coeurok.png" id="vie1" class="vie">
+        <img src="ressource jeu/coeurok.png" id="vie2" class="vie">
+        <img src="ressource jeu/coeurok.png" id="vie3" class="vie">
+        <img src="ressource jeu/missile.gif" id="miss0" class="vie">
+        <img src="ressource jeu/missile.gif" id="miss1" class="vie">
+        <img src="ressource jeu/missile.gif" id="miss2" class="vie">
+        <img src="ressource jeu/missile.gif" id="miss3" class="vie">
+        <img src="ressource jeu/missile.gif" id="miss4" class="vie">    
+    </div>
+<!--
+    <p class="param"><span id="perte">4</span> vie(s)</p>
+    <p class="param"><span id="missile">5</span> missile(s)</p>
+-->
+    <p><button id="start" class="button">START</button></p>
+    <p class="score">record <span id="record">0</span></p>
+
+
+    <audio id="over" controls>
+        <source src="ressource jeu/son/game-over.wav" type="audio/wav">
+    </audio>
+    <audio id="vite" controls>
+        <source src="ressource jeu/son/hurry-up.wav" type="audio/wav">
+    </audio>
+    <audio id="touche" controls>
+        <source src="ressource jeu/son/tuyau.wav" type="audio/wav">
+    </audio>
+    <audio id="lance" controls>
+        <source src="ressource jeu/son/saut.wav" type="audio/wav">
+    </audio>
+    <audio id="kc" controls>
+        <source src="ressource jeu/son/power-up.wav" type="audio/wav">
+    </audio>
+    <audio id="bossok" controls>
+        <source src="ressource jeu/son/monde-termine.wav" type="audio/wav">
+    </audio>
+    <audio id="bossko" controls>
+        <source src="ressource jeu/son/niveau-termine.wav" type="audio/wav">
+    </audio>
+
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <h2 class="modal-title">Instructions</h2>
+        <span class="close">&times;</span>
+        <p>Flèches haut et bas pour monter/descendre<br>
+        Flèches gauche et droite pour avancer/reculer<br>
+        Touche A ou espace pour tirer<br>
+        Bouton start pour commencer<br><br>
+        Cheat Konami available
+
+
+        </p>
+    </div>
+  
+  </div>
+
+<script src="jeu.js"></script>
+<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+</html>

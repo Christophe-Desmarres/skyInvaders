@@ -1,0 +1,258 @@
+@font-face { 	
+    font-family: "pixel"; 
+    src:url("fonts/Minecraft.ttf"); 
+  }
+  
+.espacejeu{
+    width: 700px;
+
+    background-color: rgb(185, 177, 166);
+
+}
+
+.clavier {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #d42929;
+    opacity: 0.1;
+    padding: 10px;
+    width: 660px;
+    grid-gap: 2px;
+
+ }
+
+.touch {
+    margin: 0;
+    color: black;
+    border: 2px solid black;
+    height: 185px;
+}
+
+.score{
+    width: 700px;
+    font-family: pixel;
+    font-size: 150%;
+    text-align: center;
+}
+
+.param{
+    font-family: pixel;
+    font-size: 150%;
+}
+
+.button {
+    display: inline-flex;
+    font-family: pixel;
+    width: 700px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: 2px solid red;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+
+}
+
+.message{
+    font-size: 200px;
+    font-family: pixel;
+    margin-left:70px;
+}
+
+.ecran{
+    width: 700px;
+    height: 400px;
+    background-image: url("ressource jeu/dÃ©cors.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avion{
+    height: 80px;
+    /*float: right;*/
+    /*retourne l'avion vers la gauche*/
+    transform: scaleX(-1);
+    position: absolute;
+    top : 80px;
+    left: 550px;
+}
+.missile{
+    height: 100px;
+    float: right;
+    transform: rotate(-90deg);
+    position: absolute;
+    top : 77px;
+    left:600px;
+   
+}
+
+#missile0{
+    display: none;
+    top:100px;
+    left: 580px;
+}
+
+#missile1{
+    display: none;
+    top:100px;
+    left: 580px;
+}
+
+#missile2{
+    display: none;
+    top:100px;
+    left: 580px;
+}
+
+#missile3{
+    display: none;
+    top:100px;
+    left: 580px;
+}
+
+#missile4{
+    display: none;
+    top:100px;
+    left: 580px;
+}
+
+.ennemi{
+    height: 100px;
+    position: absolute;
+}
+
+#ennemi0{
+    display: initial;
+    top:100px;
+    left: -80px;
+}
+
+#ennemi1{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi2{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi3{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi4{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi5{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi6{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#ennemi7{
+    display: none;
+    top:100px;
+    left: -80px;
+}
+#boss{
+    transform: rotate(5deg);
+    display: none;
+    width: 200px;
+    height: 200px;
+    top: 200px;;
+    left: -180px;
+}
+
+.barrevie{
+        width: 700px;
+
+}
+
+.vie{
+    display: inline-block;
+    width: 8%;
+}
+
+.vide{
+    width: 4%;
+}
+
+.loose{
+    opacity: 0.5;
+}
+
+audio{
+    display: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+.modal-title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: pixel;
+}
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 50; opacity: 1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
