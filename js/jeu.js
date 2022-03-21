@@ -158,8 +158,8 @@ document.getElementById("start").addEventListener("click", function () {
 
 
 function affichevie(vie) {
-    var ok = '../ressources/images/coeurok.png';
-    var nok = '../ressources/images/coeurnok.png';
+    var ok = 'ressources/images/coeurok.png';
+    var nok = 'ressources/images/coeurnok.png';
 
     var img1 = document.getElementById("vie0");
     var img2 = document.getElementById("vie1");
@@ -200,8 +200,8 @@ function affichevie(vie) {
 }
 
 function affichemiss(nbmissile) {
-    var ok = '../ressources/images/missile.gif';
-    var nok = '../ressources/images/missileko.png';
+    var ok = 'ressources/images/missile.gif';
+    var nok = 'ressources/images/missileko.png';
 
     var img1 = document.getElementById("miss0");
     var img2 = document.getElementById("miss1");
