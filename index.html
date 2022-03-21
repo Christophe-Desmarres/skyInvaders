@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="../styles/stylesjeu.css">
+    <link rel="stylesheet" href="./styles/stylesjeu.css">
 </head>
+
 <body>
 
-<div id=espacejeu class="espacejeu">
-    <div>
-        <p class="score">score <span id="score">0</span></p>
-    </div>
+    <div id=espacejeu class="espacejeu">
+        <div>
+            <p class="score">score <span id="score">0</span></p>
+        </div>
 
-    <div id="ecran" class="ecran">
-        <!--
+        <div id="ecran" class="ecran">
+            <!--
         <div class="clavier" id="tactile">
             <div>
                 <p id="tir1" class="touch">1</p> 
@@ -27,87 +29,88 @@
             </div>
         </div>
         -->
-    
-        <span id="message" class="message"></span>
-        <img src="../ressources/images/avion.png" id="avion" class="avion">
-        <img src="../ressources/images/ennemi.png" id="ennemi0" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi1" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi2" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi3" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi4" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi5" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi6" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="ennemi7" class="ennemi">
-        <img src="../ressources/images/ennemi.png" id="boss" class="ennemi">
-        <img src="../ressources/images/missile.gif" id="missile0" class="missile">
-        <img src="../ressources/images/missile.gif" id="missile1" class="missile">
-        <img src="../ressources/images/missile.gif" id="missile2" class="missile">
-        <img src="../ressources/images/missile.gif" id="missile3" class="missile">
-        <img src="../ressources/images/missile.gif" id="missile4" class="missile">
 
-    </div>
+            <span id="message" class="message"></span>
+            <img src="./ressources/images/avion.png" id="avion" class="avion">
+            <img src="./ressources/images/ennemi.png" id="ennemi0" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi1" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi2" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi3" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi4" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi5" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi6" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="ennemi7" class="ennemi">
+            <img src="./ressources/images/ennemi.png" id="boss" class="ennemi">
+            <img src="./ressources/images/missile.gif" id="missile0" class="missile">
+            <img src="./ressources/images/missile.gif" id="missile1" class="missile">
+            <img src="./ressources/images/missile.gif" id="missile2" class="missile">
+            <img src="./ressources/images/missile.gif" id="missile3" class="missile">
+            <img src="./ressources/images/missile.gif" id="missile4" class="missile">
 
-    <div class="barrevie" id="nbvie">
-        <img src="../ressources/images/coeurok.png" id="vie0" class="vie">
-        <img src="../ressources/images/coeurok.png" id="vie1" class="vie">
-        <img src="../ressources/images/coeurok.png" id="vie2" class="vie">
-        <img src="../ressources/images/coeurok.png" id="vie3" class="vie">
-        <img src="../ressources/images/missile.gif" id="miss0" class="vie">
-        <img src="../ressources/images/missile.gif" id="miss1" class="vie">
-        <img src="../ressources/images/missile.gif" id="miss2" class="vie">
-        <img src="../ressources/images/missile.gif" id="miss3" class="vie">
-        <img src="../ressources/images/missile.gif" id="miss4" class="vie">    
-    </div>
-<!--
+        </div>
+
+        <div class="barrevie" id="nbvie">
+            <img src="./ressources/images/coeurok.png" id="vie0" class="vie">
+            <img src="./ressources/images/coeurok.png" id="vie1" class="vie">
+            <img src="./ressources/images/coeurok.png" id="vie2" class="vie">
+            <img src="./ressources/images/coeurok.png" id="vie3" class="vie">
+            <img src="./ressources/images/missile.gif" id="miss0" class="vie">
+            <img src="./ressources/images/missile.gif" id="miss1" class="vie">
+            <img src="./ressources/images/missile.gif" id="miss2" class="vie">
+            <img src="./ressources/images/missile.gif" id="miss3" class="vie">
+            <img src="./ressources/images/missile.gif" id="miss4" class="vie">
+        </div>
+        <!--
     <p class="param"><span id="perte">4</span> vie(s)</p>
     <p class="param"><span id="missile">5</span> missile(s)</p>
 -->
-    <p><button id="start" class="button">START</button></p>
-    <p class="score">record <span id="record">0</span></p>
+        <p><button id="start" class="button">START</button></p>
+        <p class="score">record <span id="record">0</span></p>
 
 
-    <audio id="over" controls>
-        <source src="../ressources/son/game-over.wav" type="audio/wav">
-    </audio>
-    <audio id="vite" controls>
-        <source src="../ressources/son/hurry-up.wav" type="audio/wav">
-    </audio>
-    <audio id="touche" controls>
-        <source src="../ressources/son/tuyau.wav" type="audio/wav">
-    </audio>
-    <audio id="lance" controls>
-        <source src="../ressources/son/saut.wav" type="audio/wav">
-    </audio>
-    <audio id="kc" controls>
-        <source src="../ressources/son/power-up.wav" type="audio/wav">
-    </audio>
-    <audio id="bossok" controls>
-        <source src="../ressources/son/monde-termine.wav" type="audio/wav">
-    </audio>
-    <audio id="bossko" controls>
-        <source src="../ressources/son/niveau-termine.wav" type="audio/wav">
-    </audio>
+        <audio id="over" controls>
+            <source src="./ressources/son/game-over.wav" type="audio/wav">
+        </audio>
+        <audio id="vite" controls>
+            <source src="./ressources/son/hurry-up.wav" type="audio/wav">
+        </audio>
+        <audio id="touche" controls>
+            <source src="./ressources/son/tuyau.wav" type="audio/wav">
+        </audio>
+        <audio id="lance" controls>
+            <source src="./ressources/son/saut.wav" type="audio/wav">
+        </audio>
+        <audio id="kc" controls>
+            <source src="./ressources/son/power-up.wav" type="audio/wav">
+        </audio>
+        <audio id="bossok" controls>
+            <source src="./ressources/son/monde-termine.wav" type="audio/wav">
+        </audio>
+        <audio id="bossko" controls>
+            <source src="./ressources/son/niveau-termine.wav" type="audio/wav">
+        </audio>
 
-</div>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <h2 class="modal-title">Instructions</h2>
-        <span class="close">&times;</span>
-        <p>Flèches haut et bas pour monter/descendre<br>
-        Flèches gauche et droite pour avancer/reculer<br>
-        Touche A ou espace pour tirer<br>
-        Bouton start pour commencer<br><br>
-        Cheat Konami available
-
-
-        </p>
     </div>
-  
-  </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-<script src="../js/jeu.js"></script>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h2 class="modal-title">Instructions</h2>
+            <span class="close">&times;</span>
+            <p>Flèches haut et bas pour monter/descendre<br>
+                Flèches gauche et droite pour avancer/reculer<br>
+                Touche A ou espace pour tirer<br>
+                Bouton start pour commencer<br><br>
+                Cheat Konami available
+
+
+            </p>
+        </div>
+
+    </div>
+
+    <script src="./js/jeu.js"></script>
 </body>
+
 </html>
