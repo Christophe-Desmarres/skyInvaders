@@ -1,9 +1,9 @@
-@font-face { 	
-    font-family: "pixel"; 
-    src:url("../fonts/Minecraft.ttf"); 
-  }
-  
-.espacejeu{
+@font-face {
+    font-family: "pixel";
+    src: url("../fonts/Minecraft.ttf");
+}
+
+.espacejeu {
     width: 700px;
 
     background-color: rgb(185, 177, 166);
@@ -19,7 +19,7 @@
     width: 660px;
     grid-gap: 2px;
 
- }
+}
 
 .touch {
     margin: 0;
@@ -28,14 +28,14 @@
     height: 185px;
 }
 
-.score{
+.score {
     width: 700px;
     font-family: pixel;
     font-size: 150%;
     text-align: center;
 }
 
-.param{
+.param {
     font-family: pixel;
     font-size: 150%;
 }
@@ -57,20 +57,20 @@
 
 }
 
-.button:hover{
+.button:hover {
     background-color: red;
     color: black;
     border: 2px solid black;
 
 }
 
-.message{
+.message {
     font-size: 200px;
     font-family: pixel;
-    margin-left:70px;
+    margin-left: 70px;
 }
 
-.ecran{
+.ecran {
     width: 700px;
     height: 400px;
     background-image: url("../ressources/images/décors.png");
@@ -78,181 +78,207 @@
     background-size: cover;
 }
 
-.avion{
+.avion {
     height: 80px;
     /*float: right;*/
     /*retourne l'avion vers la gauche*/
     transform: scaleX(-1);
     position: absolute;
-    top : 80px;
+    top: 80px;
     left: 550px;
 }
-.missile{
+
+.missile {
     height: 100px;
     float: right;
     transform: rotate(-90deg);
     position: absolute;
-    top : 77px;
-    left:600px;
-   
+    top: 77px;
+    left: 600px;
+
 }
 
-#missile0{
+#missile0 {
     display: none;
-    top:100px;
+    top: 100px;
     left: 580px;
 }
 
-#missile1{
+#missile1 {
     display: none;
-    top:100px;
+    top: 100px;
     left: 580px;
 }
 
-#missile2{
+#missile2 {
     display: none;
-    top:100px;
+    top: 100px;
     left: 580px;
 }
 
-#missile3{
+#missile3 {
     display: none;
-    top:100px;
+    top: 100px;
     left: 580px;
 }
 
-#missile4{
+#missile4 {
     display: none;
-    top:100px;
+    top: 100px;
     left: 580px;
 }
 
-.ennemi{
+.ennemi {
     height: 100px;
     position: absolute;
 }
 
-#ennemi0{
+#ennemi0 {
     display: initial;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
 
-#ennemi1{
+#ennemi1 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi2{
+
+#ennemi2 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi3{
+
+#ennemi3 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi4{
+
+#ennemi4 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi5{
+
+#ennemi5 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi6{
+
+#ennemi6 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#ennemi7{
+
+#ennemi7 {
     display: none;
-    top:100px;
+    top: 100px;
     left: -80px;
 }
-#boss{
+
+#boss {
     transform: rotate(5deg);
     display: none;
     width: 200px;
     height: 200px;
-    top: 200px;;
+    top: 200px;
+    ;
     left: -180px;
 }
 
-.barrevie{
-        width: 700px;
+.barrevie {
+    width: 700px;
 
 }
 
-.vie{
+.vie {
     display: inline-block;
     width: 8%;
 }
 
-.vide{
+.vide {
     width: 4%;
 }
 
-.loose{
+.loose {
     opacity: 0.5;
 }
 
-audio{
+audio {
     display: none;
 }
+
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
     width: 700px;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-  
-.modal-title{
+
+.modal-title {
     background-color: black;
     color: white;
     text-align: center;
     font-family: pixel;
 }
 
-  /* Modal Content/Box */
-  .modal-content {
+/* Modal Content/Box */
+.modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
 /* Add Animation */
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 50; opacity: 1}
-  }
+    from {
+        top: -300px;
+        opacity: 0
+    }
 
-  /* The Close Button */
-  .close {
+    to {
+        top: 50;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
