@@ -653,7 +653,7 @@ function konamicode(event) {
             nbcommun = 0;
         }
     }
-    if (nbcommun == 11) {
+    if (nbcommun == 10) {
         //var myWindow = window.open("", "_self");
         //myWindow.document.write("<p>I replaced the current window.</p>");
         tabmvt = [
