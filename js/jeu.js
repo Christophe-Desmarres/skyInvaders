@@ -640,7 +640,7 @@ function gameover() {
 function konamicode(event) {
     var winObj = window.event;
     var intKeyCode = winObj.keyCode;
-    var tab = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+    var tab = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
     if (codetouche.length > 10) {
         codetouche.shift();
     }
